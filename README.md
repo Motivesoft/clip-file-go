@@ -3,10 +3,15 @@ Go implementation of clip-file, to read a text file and place its contents onto 
 
 Currently, the implementation is pretty rudimentary and expects everything to be fine.
 
-For Windows, build with this to make the program run without opening a console window, which is useful if you want to use this in the Send To context menu:
+This can be built as an executable with the following command:
+```
+go build clip-file-go.go
+```
+
+For Windows, build with special load flags to make the program run without opening a console window, which is useful if you want to use this in the Send To context menu:
 
 ```
-go build -ldflags -H=windowsgui hello.go
+go build -ldflags -H=windowsgui clip-file-go.go
 ```
 
 ## Packages
