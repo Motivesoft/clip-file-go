@@ -31,11 +31,11 @@ go build -ldflags -H=windowsgui
 ```
 
 ## Packages
-The project uses the following packages:
- * fmt
- * golang.design/x/clipboard
- * io/ioutil
- * os
+The main project uses the following packages:
+ * ```fmt```
+ * ```golang.design/x/clipboard```
+ * ```io/ioutil```
+ * ```os```
 
 ### Clipboard package - ```golang.design/x/clipboard```
 To use the clipboard package, you may need to download it first:
