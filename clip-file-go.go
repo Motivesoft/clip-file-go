@@ -18,14 +18,14 @@ func main() {
 
 	file := os.Args[1]
 
-	data, err := ioutil.ReadFile(file)
-	if err != nil {
-		panic(err)
+	data, rErr := ioutil.ReadFile(file)
+	if rErr != nil {
+		panic(rErr)
 	}
 
 	cErr := clipboard.Init()
 	if cErr != nil {
-		panic(err)
+		panic(cErr)
 	}
 
 	clipboard.Write(clipboard.FmtText, data)
